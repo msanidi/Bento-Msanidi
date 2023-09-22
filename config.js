@@ -14,10 +14,10 @@ const CONFIG = {
 	name: 'Msanidi',
 	imageBackground: true,
 	openInNewTab: true,
-	twelveHourFormat: true,
+	twelveHourFormat: false,
 
 	// Greetings
-	greetingMorning: 'Good morning!',
+	greetingMorning: 'Good morning,',
 	greetingAfternoon: 'Good afternoon,',
 	greetingEvening: 'Good evening,',
 	greetingNight: 'Time to Hack!',
@@ -31,7 +31,7 @@ const CONFIG = {
 	weatherUnit: 'C', // 'F', 'C'
 	language: 'en', // More languages in https://openweathermap.org/current#multi
 
-	trackLocation: true, // If false or an error occurs, the app will use the lat/lon below
+	trackLocation: false, // If false or an error occurs, the app will use the lat/lon below
 	defaultLatitude: '-1.286389',
 	defaultLongitude: '36.817223',
 
@@ -61,34 +61,34 @@ const CONFIG = {
 			id: '2',
 			name: 'Mail',
 			icon: 'mail',
-			link: 'https://msanidi.online/',
+			link: '#',
 		},
 		{
 			id: '3',
 			name: 'Todoist',
 			icon: 'trello',
-			link: 'https://msanidi.online/',
+			link: '#',
 		},
 		{
 			id: '4',
 			name: 'Calendar',
 			icon: 'calendar',
-			link: 'https://msanidi.online/',
+			link: '#',
 		},
 		{
 			id: '5',
 			name: 'Coffee',
 			icon: 'coffee',
-			link: 'https://msanidi.online/',
+			link: '#',
 		},
 		{
 			id: '6',
 			name: 'Youtube',
 			icon: 'youtube',
-			link: 'https://msanidi.online/',
+			link: '#',
 		},
 	],
-
+	/**
 	secondButtonsContainer: [
 		{
 			id: '1',
@@ -127,6 +127,7 @@ const CONFIG = {
 			link: 'https://msanidi.online/',
 		},
 	],
+	**/
 
 	// ┬  ┬┌─┐┌┬┐┌─┐
 	// │  │└─┐ │ └─┐
@@ -135,31 +136,17 @@ const CONFIG = {
 	// First Links Container
 	firstlistsContainer: [
 		{
-			icon: 'music',
+			icon: 'glasses',
 			id: '1',
 			links: [
 				{
-					name: 'Inspirational',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+					name: 'Ahmia',
+					link: 'https://ahmia.fi/',
 				},
 				{
-					name: 'Classic',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+					name: 'BitValve',
+					link: 'https://www.bitvalve.com/',
 				},
-				{
-					name: 'Oldies',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-				},
-				{
-					name: 'Rock',
-					link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-				},
-			],
-		},
-		{
-			icon: 'glasses',
-			id: '2',
-			links: [
 				{
 					name: 'Dark.Fail',
 					link: 'https://dark.fail/',
@@ -168,18 +155,32 @@ const CONFIG = {
 					name: 'SupportXMR',
 					link: 'https://www.supportxmr.com/',
 				},
+			],
+		},
+		{
+			icon: 'music',
+			id: '2',
+			links: [
 				{
-					name: 'Ahmia',
-					link: 'https://ahmia.fi/',
+					name: 'Inspirational',
+					link: '#',
 				},
 				{
-					name: 'Search',
-					link: 'https://www.duckduckgo.com/',
+					name: 'Classic',
+					link: '#',
+				},
+				{
+					name: 'Oldies',
+					link: '#',
+				},
+				{
+					name: 'Rock',
+					link: '#',
 				},
 			],
 		},
-	],
-
+	]
+	/**
 	// Second Links Container
 	secondListsContainer: [
 		{
@@ -226,5 +227,5 @@ const CONFIG = {
 				},
 			],
 		},
-	],
+	],**/
 };
